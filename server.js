@@ -29,7 +29,7 @@ app.use("/api/v1/admin", require("./routes/adminRoutes.js"));
 app.use(express.static(path.join(__dirname,'./client/build')));
 
 app.get('*',(req,res)=>{
-    res.sendFile(path.join(,'./client/build/index.html')
+    res.sendFile(path.join(__dirname,'./client/build/index.html'));
 })
 
 
