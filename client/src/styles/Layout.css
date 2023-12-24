@@ -1,0 +1,43 @@
+.sidebar{
+    height: 100vh !important;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(134, 15, 15);
+    box-shadow: 0 0 2px rgb(255, 0, 0);
+    color: white;
+}
+
+.menu{
+    padding-top: 100px;
+}
+
+.menu-item{
+    padding-top:20px ;
+}
+
+.menu-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-item i{
+    font-size: 1.2rem;
+    margin: 0 15px;
+    color: white;
+}
+
+.active{
+    background-color: white;
+    padding: 10px;
+    margin-top: 25px;
+    box-shadow: 0 0 7px rgb(255, 0, 0);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.active a{
+    color: rgb(134, 15, 15);
+}
+
+.active i{
+    color: rgb(134, 15, 15);
+}
