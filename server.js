@@ -4,6 +4,7 @@ const colors = require('colors');
 const morgan = require('morgan');
 const cors = require('cors');
 const connectDB = require('./config/db.js');
+const path = require('path');
 
 dotenv.config();
 
@@ -23,6 +24,13 @@ app.use('/api/v1/auth',require('./routes/authRoute.js'))
 app.use('/api/v1/inventory',require('./routes/inventoryRoutes.js'))
 app.use('/api/v1/analytics',require('./routes/analyticsRoutes.js'))
 app.use("/api/v1/admin", require("./routes/adminRoutes.js"));
+
+
+app.use(express.static(path.join(__dirname,'./client/build')));
+
+app.get('*',(req,res)=>{
+    res.sendFile(path.join(,'./client/build/index.html')
+})
 
 
 const PORT = process.env.PORT || 8080;
