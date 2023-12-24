@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-login{
+  width: 30%;
+  height: auto;
+}
+.banner{
+  width: 1010px;
+  height: 100%;
+  margin-right: 0px;
+  object-fit: cover;
+  /* object-position: au; */
+} 
+
+
+
+.navbar{
+  background-color: #220000 !important;
+  color: white !important;
+}
+
+.nav-link{
+  background-color: #220000 !important;
+  color: white !important;
+}
+
+.navbar-brand{
+  background-color: #220000 !important;
+  color: white !important;
+  font-size: 30px;
+}
+
+.gold{
+  color: #FFD700;
+}
+
+.hide_scroll {
+  overflow: hidden;
+}
+
+.card_title, .card_footer{
+  border-radius: 10px !important;
+  box-shadow: 0 0 2px rgb(10, 10, 10);;
+}
